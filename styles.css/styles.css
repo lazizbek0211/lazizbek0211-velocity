@@ -1,0 +1,98 @@
+/* global */
+*{box-sizing: border-box;}
+
+html {
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'rubik','rubik mono one',"sans-serif";
+    color:#4a4b4c;
+    background-color:#eee;
+    flex-wrap: nowrap;
+}
+img{
+    height:auto;
+    max-width: 100%;   
+}
+*:focus{
+    outline: 3px dashed skyblue;
+    outline-offset: 3px;
+}
+.container{
+    max-width: 1260px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.visuallyhidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-text-fill-color: green;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+/*Input styles*/
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+color:transparent;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+color:transparent;
+}
+
+input::-moz-placeholder { /* Firefox 19+ */
+color:transparent;
+}
+
+input:-ms-input-placeholder { /* IE */
+color:transparent;
+}
+
+input::-ms-input-placeholder { /* IE Edge */
+color:transparent;
+}
+
+
+.site-main{
+    flex-grow:1;
+}
+
+/*for retina*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+}
